@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@font-face {
+    font-family: myFirstFont;
+    src: url('/fonts/OpenSans-Bold.ttf');
+  }
+
+  @font-face {
+    font-family: mySecondFont;
+    src: url('/fonts/Poppins-Regular.ttf');
+  }
+  @font-face {
+    font-family: myThirdFont;
+    src: url('/fonts/Lato-Regular.ttf');
+  }
+  @font-face {
+    font-family: myFourthFont;
+    src: url('/fonts/Montserrat-Regular.ttf');
+  }
+
+
+.site-header{
+    min-height: 100vh;
+    width: 100%;
+    background: #667db6;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+    position: relative;
+}
+.site-nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1% 4%;
+}
+
+.logo{
+font-family: myFourthFont;
+letter-spacing: 0.205em;
+}
+.weather-app{
+    top: 50%;
+    left: 50%;
+    background-color: #0093E9;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+width: 300px;
+height: 300px;
+padding: 10px;
+border-radius: 8px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.weather-app p{
+    color: white;
+    font-family: myFirstFont;
+    font-size: 64px;
+}
+#description{
+color: #222;
+    font-size: 21px;
+
+
+}
+.location p{
+    font-family: myFourthFont;
+    font-size: 20px;
+    text-transform: capitalize;
+    letter-spacing:0.205rem;
+    text-align: center;
+}
+.search-btn{
+    background-color: transparent;
+    border-radius: 5px;
+    font-family: myFourthFont;
+    padding: 8px 16px;
+    border: 1px solid #444;
+    color: #222;
+    font-size: 13px;
+}
+.home-btn{
+    background-color: transparent;
+    border-radius: 5px;
+    font-family: myFourthFont;
+    padding: 8px 16px;
+    border: 1px solid #444;
+    color: #222;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+#cityName::placeholder{
+   color: #333;
+    text-align: center;
+
+}
+.weather-img{
+    margin: 4.0rem 0;
+}
